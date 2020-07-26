@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container">              
+            <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+                <div class="col-sm-6 thumbnail">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active" id="tabb"><a href="#">Timer</a></li>
+                            <li role="presentation" id="taba"><a href="#">Input Swimmer</a></li>
+                        </ul>
+                        <div class="row form-group btn-group-vertical" style="margin-top: 10px">
+                            <div class="col-sm-6"><input class="form-control" type="text" name="Name" id="" placeholder="First Name of Swimmer"></div>
+                            <div class="col-sm-6 "><input class="form-control" type="text" name="lastName" id="" placeholder="Last name of Swimmer"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                                <select class="btn btn-default " name="strokes">
+                                    <option value="freestyle">Freestyle</option>
+                                    <option value="backstroke">Backstroke</option>
+                                    <option value="breaststroke">Breaststroke</option>
+                                    <option value="fly">Fly</option>
+                                    <option value="im">IM</option>
+                                </select>
+
+                            </div>
+                            <div class="col-sm-6 form-group">
+
+                                <select class="btn btn-default" name="distances">
+                                    <option value="25m">25m</option>
+                                    <option value="50m">50m</option>
+                                    <option value="100m">100m</option>
+                                    <option value="50m/100m">50m/100m</option>
+
+                                </select>  
+
+                            </div>
+                        </div>
+                        
+                        
+                        <h3 id="timer1"><span contenteditable="true" id="minutes1">00</span> : <span id="seconds1" contenteditable="true">00</span> . <span id="milli1" contenteditable="true">00</span></h3>
+                        
+                        <div class="form-group">
+                            <button class="btn btn-lg btn-primary" id="start1">Start</button>
+                            <button class="btn btn-lg btn-primary" id="reset1">Reset</button>
+                        </div>
+                        <ol id="lap_list"></ol>
+                    </div>
+                <div class="col-sm-6">
+                        
+                    <div class="thumbnail">
+                        <input class="form-control" type="text" name="Name2" id="">
+                        <h3 class="timer">00 : 00 . 000</h3>
+                        <button class="btn btn-lg btn-primary">Start</button>
+                        <button class="btn btn-lg btn-primary">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/home/isaac/Programming/WebDev/Stopwatch web app/resources/Stopwatch.js"></script>
+        <script src="/home/isaac/Programming/WebDev/Stopwatch web app/resources/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+
+</html>

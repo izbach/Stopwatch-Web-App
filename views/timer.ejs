@@ -1,0 +1,58 @@
+<% include partials/header %>
+       
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <div class="col-xs-6 thumbnail">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active" id="tabb"><a href="#">Timer</a></li>
+                    <li role="presentation" id="taba"><a href="#">Input Swimmer</a></li>
+                </ul>
+                <div class="row form-group btn-group-vertical" style="margin-top: 10px">
+                    <div class="col-sm-6"><input class="form-control" type="text" name="Name" id="" placeholder="First Name of Swimmer"></div>
+                    <div class="col-sm-6 "><input class="form-control" type="text" name="lastName" id="" placeholder="Last name of Swimmer"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <select class="btn btn-default " name="strokes">
+                            <option value="freestyle">Freestyle</option>
+                            <option value="backstroke">Backstroke</option>
+                            <option value="breaststroke">Breaststroke</option>
+                            <option value="fly">Fly</option>
+                            <option value="im">IM</option>
+                        </select>
+
+                    </div>
+                    <div class="col-sm-6 form-group">
+
+                        <select class="btn btn-default" name="distances">
+                            <option value="25m">25m</option>
+                            <option value="50m">50m</option>
+                            <option value="100m">100m</option>
+                            <option value="50m/100m">50m/100m</option>
+
+                        </select>  
+
+                    </div>
+                </div>
+                
+                
+                <h3 id="timer1"><span contenteditable="true" type="number" maxlength="2" id="minutes1">00</span> : <span id="seconds1" maxlength="2" contenteditable="true">00</span> . <span id="milli1" maxlength="2" contenteditable="true">00</span></h3>
+                
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary" id="start1">Start</button>
+                    <button class="btn btn-lg btn-primary" id="reset1">Reset</button>
+                </div>
+                <ol id="lap_list"></ol>
+            </div>
+        <div class="col-xs-6">
+                
+            <div class="thumbnail">
+                <input class="form-control" type="text" name="Name2" id="">
+                <h3 class="timer">00 : 00 . 000</h3>
+                <button class="btn btn-lg btn-primary">Start</button>
+                <button class="btn btn-lg btn-primary">Reset</button>
+            </div>
+        </div>
+    </div>
+
+<% include partials/footer %>

@@ -1,0 +1,62 @@
+<% include partials/header %>
+
+<h1>This is the landing page!</h1>
+
+
+<div class="container">
+<table class="table table-sm table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Age</th>
+        <th scope="col">email</th>
+        <th scope="col">Free best</th>
+        <th scope="col">back best</th>
+        <th scope="col">breast best</th>
+        <th scope="col">fly best</th>
+
+      </tr>
+    </thead>
+    <!-- <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody> -->
+
+    <tbody>
+        <% swimmers.forEach(function(swimmer){ %>
+            <tr>
+                <td><%= swimmer.first_name %></td>
+                <td><%= swimmer.last_name %></td>
+                <td><%= swimmer.age %></td>
+                <td><%= swimmer.email %></td>
+            </tr>
+
+            
+
+        <% }) %>
+
+    </tbody>
+
+
+  </table>
+</div>
+
+
+
+<% include partials/footer %>
